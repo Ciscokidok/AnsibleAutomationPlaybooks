@@ -5,7 +5,7 @@
   tasks:
   - name: Show Version
     ansible.netcommon.cli_command:
-      commands: show version
+      command: show version 
     register: out
 
   - debug: msg="{{out.stdout}}"
