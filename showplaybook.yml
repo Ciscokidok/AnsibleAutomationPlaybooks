@@ -1,0 +1,12 @@
+---
+- name: Nexus Commands
+  hosts: Nexus 
+
+  tasks:
+  - name: Show Feature Summary
+    cisco.nxos.nxos_command:
+      commands: show feature 
+    register: out
+
+  - debug: msg="{{out.stdout}}"
+      
