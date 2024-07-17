@@ -1,11 +1,11 @@
 ---
-- name: Nexus Commands
-  hosts: Nexus 
+- name: Catalyst Switch Commands
+  hosts: Catalyst
 
   tasks:
-  - name: Show Feature Summary
-    cisco.nxos.nxos_command:
-      commands: show feature 
+  - name: Show Version
+    ansible.netcommon.cli_command:
+      commands: show version
     register: out
 
   - debug: msg="{{out.stdout}}"
