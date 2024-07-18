@@ -9,14 +9,11 @@
   vars: 
     ansible_connection: ansible.netcommon.network_cli
     ansible_network_os: ios
-    ansible_user: '{{ ansible_user }}'
-    ansible_password: '{{ ansible_password }}'
-    ansible_become: yes
-    ansible_become_method: enable 
-    ansible_become_password: '{{ ansible_password }}'
+  
+    
 
   tasks:
-  - name: Show Version
+  - name: show ip int brief 
     ansible.netcommon.cli_command:
       command: show ip int brief
     register: out
