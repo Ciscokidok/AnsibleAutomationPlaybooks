@@ -3,7 +3,7 @@
   hosts: Catalyst
 
   vars_files:
-  -credentials.yml
+    -credentials.yml
 
   vars: 
     user: '{{ cisco_username }}'
