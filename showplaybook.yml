@@ -1,6 +1,16 @@
 ---
 - name: Catalyst Switch Commands
   hosts: Catalyst
+  gather_facts:no
+
+  vars_files:
+  -credentials.yml
+
+  vars: 
+  provider:
+  user: '{{ cisco_username }}'
+  password: '{{ password }}' 
+  validate_certs: no 
 
   tasks:
   - name: Show Version
