@@ -1,7 +1,8 @@
 ---
 - name: Catalyst Switch Commands
   hosts: Catalyst
-
+  gather_facts: no
+  
   vars_files:
     -credentials.yml
 
