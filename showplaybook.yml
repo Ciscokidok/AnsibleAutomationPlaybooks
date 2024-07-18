@@ -7,12 +7,9 @@
     -credentials.yml
 
   vars: 
-    provider:
-      ansible_ssh_user: '{{ cisco_username }}'
-      ansible_ssh_pass: '{{ cisco_password }}' 
-      ansible_connection: ansible.netcommon.network_cli
-      ansible_become: yes
-      ansible_become_method: enable 
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_become: yes
+    ansible_become_method: enable 
 
   tasks:
   - name: Show Version
