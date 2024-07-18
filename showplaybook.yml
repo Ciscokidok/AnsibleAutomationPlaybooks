@@ -6,10 +6,10 @@
   -credentials.yml
 
   vars: 
-  provider:
-  user: '{{ cisco_username }}'
-  password: '{{ cisco_password }}' 
-  validate_certs: no 
+    provider:
+       user: '{{ cisco_username }}'
+       password: '{{ cisco_password }}' 
+       validate_certs: no 
 
   tasks:
   - name: Show Version
