@@ -1,1 +1,2 @@
-
+---
+command: "show ip interface brief"
