@@ -1,6 +1,7 @@
 ---
 - name: Catalyst Switch Commands
   hosts: Catalyst
+  connection: 
   gather_facts: false
   
   roles:
