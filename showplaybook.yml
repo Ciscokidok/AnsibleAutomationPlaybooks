@@ -4,7 +4,8 @@
   connection: ansible.netcommon.network_cli 
   gather_facts: false
   
-  roles:cli_output
+  roles:
+    - cli_output
   
     
 
