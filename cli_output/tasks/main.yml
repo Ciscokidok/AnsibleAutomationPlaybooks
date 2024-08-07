@@ -2,6 +2,6 @@
 - name: Run show ip interface brief
   cisco.ios.ios_command:
     command: "{{ command }}"
-    register: out
+  register: out
 
 - debug: msg="{{out.stdout}}"
