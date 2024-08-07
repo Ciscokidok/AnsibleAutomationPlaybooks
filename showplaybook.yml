@@ -1,7 +1,6 @@
 ---
 - name: Catalyst Switch Commands
   hosts: Catalyst
-  connection: ansible.netcommon.cli_command
   gather_facts: false
   
   roles:
