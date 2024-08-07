@@ -1,7 +1,7 @@
 ---
 - name: show ip int brief 
   ansible.netcommon.cli_command:
-  command: {{ command }}
+  command: "{{ command }}"
   register: out
 
 - debug: msg="{{out.stdout}}"
