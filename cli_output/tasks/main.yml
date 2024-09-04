@@ -2,7 +2,10 @@
 - name: Run show ip interface brief
   cisco.ios.ios_facts:
     gather_subset: all
-  register: out
+  
 
-- debug: msg="{{ out.stdout }}"
+- name: print the relevant fact we gathered in previous task
+  debug:
+    msg: "{{ ansible_net_hostname }}"
+
   
