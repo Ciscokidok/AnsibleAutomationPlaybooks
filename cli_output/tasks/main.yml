@@ -6,6 +6,6 @@
 
 - name: print the relevant fact we gathered in previous task
   debug:
-    msg: "{{ ansible_net_gather_subset | to_json }}"
+    msg: "{{ ansible_net_gather_subset | to_nice_json }}"
 
   
