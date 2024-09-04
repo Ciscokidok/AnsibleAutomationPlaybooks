@@ -4,4 +4,4 @@
     gather_subset: 'min'
   register: out
 
-- debug: msg="{{out.stdout | to_json}}"
+- debug: msg="{{out.stdout}}"
