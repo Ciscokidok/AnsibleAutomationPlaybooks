@@ -6,6 +6,6 @@
 
 - name: print the relevant fact we gathered in previous task
   debug:
-    msg: "{{ ansible_net_hostname }}"
+    msg: "{{ ansible_net_all_ipv4_addresses }}"
 
   
