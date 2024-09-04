@@ -2,4 +2,7 @@
 - name: Run show ip interface brief
   cisco.ios.ios_facts:
     gather_subset: all
+  register: out
+
+- debug: msg="{{ out.stdout }}"
   
