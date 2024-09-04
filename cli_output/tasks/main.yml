@@ -1,7 +1,7 @@
 ---
 - name: Run show ip interface brief
-  cisco.ios.ios_command:
-    commands: "{{ command }}"
+  cisco.ios.ios_facts:
+    gather_subset: 'min'
   register: out
 
-- debug: msg="{{out.stdout}}"
+- debug: msg="{{out.stdout | to_json}}"
