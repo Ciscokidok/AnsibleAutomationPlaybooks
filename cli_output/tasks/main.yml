@@ -6,6 +6,6 @@
 
 - name: print the relevant fact we gathered in previous task
   debug:
-    msg: "{{ ansible_net_gather_subset | to_nice_json }}"
+    msg: "{{ ansible_net_all_ipv4_addresses | to_nice_json }}"
 
   
